@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hot or Cold</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="game">
+
+        <!-- HEADER -->
+        <header>
+
+            <div>
+                <h1>🔥 HOT OR COLD</h1>
+
+                <p>
+                    Explore the map and find the hidden location.
+                </p>
+            </div>
+
+            <div class="stats">
+
+                <span>
+                    Guesses:
+                    <strong id="guessCount">0</strong>
+                </span>
+
+                <span>
+                    View:
+                    <strong id="viewName">MAP</strong>
+                </span>
+
+            </div>
+
+        </header>
+
+
+        <!-- GAME AREA -->
+
+        <main>
+
+            <div class="map-container">
+
+                <div id="map">
+
+                    <!-- MAP -->
+
+                    <div class="ground"></div>
+
+
+                    <!-- ROADS -->
+
+                    <div class="road road1"></div>
+
+                    <div class="road road2"></div>
+
+                    <div class="road road3"></div>
+
+
+                    <!-- BUILDINGS -->
+
+                    <div class="building building1"></div>
+
+                    <div class="building building2"></div>
+
+                    <div class="building building3"></div>
+
+                    <div class="building building4"></div>
+
+
+                    <!-- TREES -->
+
+                    <div class="tree tree1">
+                        🌳
+                    </div>
+
+                    <div class="tree tree2">
+                        🌳
+                    </div>
+
+                    <div class="tree tree3">
+                        🌳
+                    </div>
+
+                    <div class="tree tree4">
+                        🌳
+                    </div>
+
+
+                    <!-- PLAYER -->
+
+                    <div id="player">
+                        🧍
+                    </div>
+
+
+                    <!-- HIDDEN TARGET -->
+
+                    <div id="target">
+                        🎯
+                    </div>
+
+
+                    <!-- PERSON VIEW -->
+
+                    <div id="personOverlay">
+
+                        <div class="personSky"></div>
+
+                        <div class="personHorizon"></div>
+
+                        <div class="personGround"></div>
+
+                        <div class="personVignette"></div>
+
+                        <div class="personCrosshair">
+                            +
+                        </div>
+
+                        <div
+                            class="personDirection"
+                            id="personDirection"
+                        >
+                            FACING NORTH
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- CONTROLS -->
+
+            <section class="controls">
+
+                <div id="temperature">
+                    ❄️ COLD
+                </div>
+
+
+                <p id="message">
+                    Use the arrow keys to explore.
+                </p>
+
+
+                <button id="confirmButton">
+                    🎯 CONFIRM GUESS
+                </button>
+
+
+                <button id="viewButton">
+                    👤 PERSON VIEW
+                </button>
+
+
+                <button id="newGameButton">
+                    🔄 NEW LOCATION
+                </button>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
